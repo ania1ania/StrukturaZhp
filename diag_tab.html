@@ -1,0 +1,302 @@
+<!doctype html>
+
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>struktura_ZHP</title>
+    <style>
+        :root {
+            --lnWdt: 2px;
+            --lnColor: #000000;
+            --wdt: 200px;
+            --hght: 50px;
+            --level1: 100px;
+        }
+
+        .diagram table,
+        .diagram th,
+        .diagram td {
+            /* border: 1px solid maroon; */
+            border: 0px solid black;
+            border-collapse: collapse;
+            font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            font-style: inherit;
+            font-size: 100%;
+        }
+
+        .diagram #block {
+            background-color: #03803b;
+            color: antiquewhite;
+            width: var(--wdt);
+            height: var(--hght);
+        }
+
+        .diagram #block:hover {
+            background-color: #01b150;
+        }
+        
+        
+         .diagram #empty {
+            width: var(--wdt);
+            height: var(--hght);
+        }
+        a:link,
+        a:visited {
+        color: antiquewhite;
+        text-decoration: none;
+        }
+
+        a:hover,
+        a:active {
+        color: antiquewhite;
+        text-decoration: none;
+        }
+        
+        .leftTopCorner {
+            border: var(--lnWdt) solid var(--lnColor);
+            height: calc(var(--hght)/2);
+            width: calc(var(--wdt)/2);
+            position: relative;
+            top: calc(var(--hght)/4);
+            left: calc(var(--wdt)/2);
+            border-bottom: 0px;
+            border-right: 0px;
+        }
+
+        .rightTopCorner {
+            border: var(--lnWdt) solid var(--lnColor);
+            height: calc(var(--hght)/2);
+            width: calc(var(--wdt)/2);
+            position: relative;
+            top: calc(var(--hght)/4);
+            left: 0px;
+            border-bottom: 0px;
+            border-left: 0px;
+        }
+
+        .leftBottomCorner {
+            border: var(--lnWdt) solid var(--lnColor);
+            height: calc(var(--hght)/2);
+            width: calc(var(--wdt)/2);
+            position: relative;
+            top: calc(var(--hght)/-4);
+            left: calc(var(--wdt)/2);
+            border-top: 0px;
+            border-right: 0px;
+        }
+
+        .rightBottomCorner {
+            border: var(--lnWdt) solid var(--lnColor);
+            height: calc(var(--hght)/2);
+            width: calc(var(--wdt)/2);
+            position: relative;
+            top: calc(var(--hght)/-4);
+            left: 0px;
+            border-top: 0px;
+            border-left: 0px;
+        }
+
+        .hLine {
+            border: var(--lnWdt) solid var(--lnColor);
+            height: var(--hght);
+            width: var(--wdt);
+            position: relative;
+            top: calc(var(--hght)/2);
+            left: calc(var(--lnWdt)/-2);
+            border-bottom: 0px;
+            border-left: 0px;
+            border-right: 0px;
+        }
+
+        .vLine {
+            border: var(--lnWdt) solid var(--lnColor);
+            height: var(--hght);
+            width: calc(var(--wdt)/2);
+            position: relative;
+            top: 0px;
+            left: calc(var(--wdt)/2);
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+        }
+
+        .crossVLine {
+            border: var(--lnWdt) solid var(--lnColor);
+            height: calc(var(--hght)/2 - var(--lnWdt));
+            width: calc(var(--wdt)/2);
+            position: relative;
+            top: 0px;
+            left: calc(var(--wdt)/2);
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+        }
+
+        .crossHLine {
+            border: var(--lnWdt) solid var(--lnColor);
+            height: var(--lnWdt);
+            width: var(--wdt);
+            position: relative;
+            top: calc(var(--lnWdt)/2);
+            left: 0px;
+            border-bottom: 0px;
+            border-left: 0px;
+            border-right: 0px;
+        }
+    </style>
+</head>
+<body style="background-color:rgb(241, 241, 241);">
+
+    <h1 style="text-align:center;background-color:rgb(178, 207, 124);font-size:300%;">Struktura ZHP</h1>
+    <img src="lilijkazhp.png" style="float:right;width:99px;height:116px;">
+    
+
+    <div class="diagram">
+        <table>
+            <tr>
+                <td id="empty"></td>
+                <td id="empty"></td>
+                <td id="block"><a href="głownakwatera.html">Kwatera Główna</td></a>
+                <td id="empty"></td>
+                <td id="empty"></td>
+            </tr>
+            <tr>
+                <td id="empty"></td>
+                <td id="empty"></td>
+                <td>
+                    <div class="vLine"></div>
+                </td>
+                <td id="empty"></td>
+                <td id="empty"></td>
+            </tr>
+            <tr>
+                <td id="empty"></td>
+                <td id="empty"></td>
+                <td id="block"><a href="choragiew.html">Chorągiew</td></a>
+                <td id="empty"></td>
+                <td id="empty"></td>
+            </tr>
+            <tr>
+                <td id="empty"></td>
+                <td id="empty"></td>
+                <td>
+                    <div class="vLine"></div>
+                </td>
+                <td id="empty"></td>
+                <td id="empty"></td>
+            </tr>
+            <tr>
+                <td id="empty"></td>
+                <td id="empty"></td>
+                <td id="block"><a href="hufiec.html">Hufiec</td></a>
+                <td id="empty"></td>
+                <td id="empty"></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="leftTopCorner"></div>
+                </td>
+                <td>
+                    <div class="hLine"></div>
+                </td>
+                <td>
+                    <div class="crossVLine"></div>
+                    <div class="crossHLine"></div>
+                    <div class="crossVLine"></div>
+                </td>
+                <td>
+                    <div class="hLine"></div>
+                </td>
+                <td>
+                    <div class="rightTopCorner"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="vLine"></div>
+                </td>
+                <td id="empty"></td>
+                <td id="block"><a href="szczep.html">Szczep</td></a>
+                <td id="empty"></td>
+                <td id="block"><a href="zw_druzyn.html">Związek drużyn</td></a>
+            </tr>
+            <tr>
+                <td>
+                    <div class="leftBottomCorner"></div>
+                </td>
+                <td>
+                    <div class="hLine"></div>
+                </td>
+                <td>
+                    <div class="crossVLine"></div>
+                    <div class="crossHLine"></div>
+                    <div class="crossVLine"></div>
+                </td>
+                <td>
+                    <div class="hLine"></div>
+                </td>
+                <td>
+                    <div class="rightBottomCorner"></div>
+                </td>
+            </tr>
+            <tr>
+                <td id="empty"></td>
+                <td id="empty"></td>
+                <td>
+                    <div class="vLine"></div>
+                </td>
+                <td id="empty"></td>
+                <td id="empty"></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="leftTopCorner"></div>
+                </td>
+                <td>
+                    <div class="hLine"></div>
+                </td>
+                <td>
+                    <div class="crossVLine"></div>
+                    <div class="crossHLine"></div>
+                    <div class="crossVLine"></div>
+                </td>
+                <td>
+                    <div class="hLine"></div>
+                </td>
+                <td>
+                    <div class="rightTopCorner"></div>
+                </td>
+            </tr>
+            <tr>
+                <td id="block"><a href="gromada.html">Gromada</td></a>
+                <td id="empty"></td>
+                <td id="block"><a href="druzyna.html">Drużyna</td></a>
+                <td id="empty"></td>
+                <td id="block"><a href="krag.html">Krąg</td></a>
+            </tr>
+            <tr>
+                <td>
+                    <div class="vLine"></div>
+                </td>
+                <td id="empty"></td>
+                <td>
+                    <div class="vLine"></div>
+                </td>
+                <td id="empty"></td>
+                <td id="empty"></td>
+            </tr>
+            <tr>
+                <td id="block"><a href="szostka.html">Szóstka</td></a>
+                <td id="empty"></td>
+                <td id="block"><a href="zastep.html">Zastęp</td></a>
+                <td id="empty"></td>
+                <td id="empty"></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
